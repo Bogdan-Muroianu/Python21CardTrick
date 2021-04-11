@@ -1,17 +1,3 @@
-import os
-
-MAIN_FILE_PATH = os.path.dirname(__file__)
-IMAGES_FOLDERS = os.path.join(MAIN_FILE_PATH, "images")
-CARDS_FOLDER = os.path.join(MAIN_FILE_PATH, IMAGES_FOLDERS, "cards")
-
-only_png = [f for f in os.listdir(CARDS_FOLDER)]
-# print(only_png)
-
-for i in only_png:
-    # pass
-    print(f"'{i[:-4]}': '{i}',")
-
-# http://acbl.mybigcommerce.com/52-playing-cards/
 cards = {'JH': 'JH.png',
          'QD': 'QD.png',
          '3C': '3C.png',
@@ -67,8 +53,3 @@ cards = {'JH': 'JH.png',
          '2D': '2D.png',
          'purple_back': 'purple_back.png',
          }
-
-# print(cards)
-
-# https://github.com/Bogdan-Muroianu/Python_21_CardTrick.git
-# https://github.com/Bogdan-Muroianu/Python21CardTrick/blob/main/table_top.png?raw=true
